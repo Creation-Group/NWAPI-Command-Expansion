@@ -1,4 +1,4 @@
-﻿namespace CommandExpension
+﻿namespace CommandExpansion
 {
 	using PluginAPI.Core;
 	using PluginAPI.Core.Attributes;
@@ -6,10 +6,10 @@
 
 	public class MainClass
 	{
-		[PluginEntryPoint("CommandExpension", "1.0.0", "This plugin provide custom commands for SCP-SL servers.", "Majorfox")]
+		[PluginEntryPoint("CommandExpansion", "1.0.0", "This plugin provide custom commands for SCP-SL servers.", "Majorfox")]
 		void LoadPlugin()
 		{
-			Log.Info("Loaded CommandExpension...");
+			Log.Info("Loaded CommandExpansion...");
 			EventManager.RegisterEvents(this);
 			EventManager.RegisterEvents<EventHandlers>(this);
 		}

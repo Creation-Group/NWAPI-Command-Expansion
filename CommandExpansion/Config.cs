@@ -1,4 +1,4 @@
-﻿namespace CommandExpension
+﻿namespace CommandExpansion
 {
 	public class Config
 	{

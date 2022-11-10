@@ -1,4 +1,4 @@
-﻿namespace CommandExpension.Commands
+﻿namespace CommandExpansion.Commands
 {
 	using CommandSystem;
 	using System;
