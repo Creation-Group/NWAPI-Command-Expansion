@@ -1,4 +1,4 @@
-﻿namespace CommandExpension.Commands.Working
+﻿namespace CommandExpension.Commands
 {
 	using CommandSystem;
 	using PluginAPI.Core;
