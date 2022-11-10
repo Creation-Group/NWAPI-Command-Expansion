@@ -1,10 +1,23 @@
 
-# Command Expension Plugin
+# Command Expansion Plugin
 
 This plugin provide custom commands for SCP-SL servers.
 
-
 *[This solution is using the official server-side plugin system for SCP: Secret Laboratory game. NW-API](https://github.com/northwood-studios/NwPluginAPI)*
+
+-----
+
+## How to build the plugin without existing project:
+
+1) Download the repository
+
+2) Then integrate the **[NwPluginAPI](https://github.com/northwood-studios/NwPluginAPI)** folder and the **Analyzers** folder next to the **CommandExpension** folder
+
+3) Run the NWAPI-Command-Expansion.sln
+
+4) Open any file in the CommandExpansion namespace
+
+5) Generate CommandExpansion
 
 -----
 
