@@ -15,7 +15,8 @@
 
 		public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
 		{
-			response = $"There are {Player.Count-1} players currently.\n"
+			response = "\n"
+					 + $"There are {Player.Count-1} players currently.\n"
 					 + $"<color=green>Round started :</color> {Statistics.CurrentRound.StartTimestamp}\n"
 					 + $"<color=green>Map seed :</color> [<color=red>{Map.Seed}</color>]\n\n"
 					 + $"<color=green>TotalScpKills :</color> {Statistics.CurrentRound.TotalScpKills} Kills\n"
