@@ -1,7 +1,7 @@
 ﻿namespace CommandExpension
 {
-    public class Config
-    {
+	public class Config
+	{
 
-    }
+	}
 }

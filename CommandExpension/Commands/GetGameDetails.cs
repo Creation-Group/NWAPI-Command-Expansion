@@ -1,8 +1,8 @@
 ﻿namespace CommandExpension.Commands
 {
 	using CommandSystem;
-	using System;
 	using PluginAPI.Core;
+	using System;
 
 	[CommandHandler(typeof(RemoteAdminCommandHandler))]
 	public class GameStats : ICommand

@@ -15,11 +15,12 @@
 		public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
 		{
 			string itemlist = "";
+
 			for (int i = 0; i < Enum.GetNames(typeof(ItemType)).Length-1; i++)
 			{
-				itemlist += $"[<color=green>{i}</color>] - {(ItemType)i} {ItemType.Adrenaline.HasFlag(ItemType.Adrenaline)}\n";
+				itemlist += $"[<color=green>{i}</color>] - {(ItemType)i}\n";
 			}
-			
+
 			response = itemlist;
 			return true;
 		}

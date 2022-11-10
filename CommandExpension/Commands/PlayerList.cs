@@ -19,8 +19,7 @@
 		{
 			string playerlist = "Nothing yet.";
 
-			//List<IPlayer> allPlayers =
-			Player.GetPlayers<IPlayer>();
+			List<IPlayer> allPlayers = Player.GetPlayers<IPlayer>();
 			/*
 			foreach (Player i in allPlayers)
 			{
