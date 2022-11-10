@@ -1,3 +1,4 @@
+
 # Command Expension Plugin
 
 This plugin provide custom commands for SCP-SL servers.
@@ -9,7 +10,7 @@ This plugin provide custom commands for SCP-SL servers.
 
 ## List of commands
 
-#### gamestats [GetGameGetails.cs]
+### gamestats [GetGameGetails.cs]
 
 *Aliases :* gamedetails
 
@@ -26,15 +27,15 @@ Current details :
 - Number of Escaped Scientists
 - Number of Killed Players
 
-
-#### itemlist [ItemList.cs]
+-----
+### itemlist [ItemList.cs]
 
 *Aliases :* itemdetails
 
 *Description :* Returns the list of available items and their ID.
 
-
-#### playerlist [PlayerList.cs]
+-----
+### playerlist [PlayerList.cs]
 
 *Aliases :* plyrlist
 
