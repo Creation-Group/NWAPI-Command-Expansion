@@ -4,7 +4,7 @@
 This plugin provide custom commands for SCP-SL servers.
 
 
-*This solution is using the official server-side plugin system for SCP: Secret Laboratory game. NW-API
+*[This solution is using the official server-side plugin system for SCP: Secret Laboratory game. NW-API](https://github.com/northwood-studios/NwPluginAPI)*
 
 -----
 
