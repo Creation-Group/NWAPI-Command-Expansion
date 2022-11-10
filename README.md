@@ -1,15 +1,16 @@
+
 # Command Expension Plugin
 
 This plugin provide custom commands for SCP-SL servers.
 
 
-*This solution is using the official server-side plugin system for SCP: Secret Laboratory game. NW-API
+*[This solution is using the official server-side plugin system for SCP: Secret Laboratory game. NW-API](https://github.com/northwood-studios/NwPluginAPI)*
 
 -----
 
 ## List of commands
 
-#### gamestats [GetGameGetails.cs]
+### gamestats [GetGameGetails.cs]
 
 *Aliases :* gamedetails
 
@@ -26,15 +27,15 @@ Current details :
 - Number of Escaped Scientists
 - Number of Killed Players
 
-
-#### itemlist [ItemList.cs]
+-----
+### itemlist [ItemList.cs]
 
 *Aliases :* itemdetails
 
 *Description :* Returns the list of available items and their ID.
 
-
-#### playerlist [PlayerList.cs]
+-----
+### playerlist [PlayerList.cs]
 
 *Aliases :* plyrlist
 
