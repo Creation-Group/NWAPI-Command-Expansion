@@ -1,18 +1,20 @@
-﻿
-using CommandSystem;
-using InventorySystem;
-using InventorySystem.Items;
-using InventorySystem.Items.Firearms;
-using InventorySystem.Items.Firearms.Attachments;
-using PluginAPI.Core;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using Utils;
-
-namespace CommandExpansion.Commands
+﻿namespace CommandExpansion.Commands
 {
+	using CommandSystem;
+	using InventorySystem;
+	using InventorySystem.Items;
+	using InventorySystem.Items.Firearms;
+	using InventorySystem.Items.Firearms.Attachments;
+	using PluginAPI.Core;
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using Utils;
 
+	/// <summary>
+	/// Give a predefined inventory to a player
+	/// - CommandExpansion Command
+	/// </summary>
 	[CommandHandler(typeof(RemoteAdminCommandHandler))]
 	public class GivePredefinedInventory : ICommand, IUsageProvider
 	{
@@ -26,8 +28,6 @@ namespace CommandExpansion.Commands
 
 		public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
 		{
-
-
 			if (!sender.CheckPermission(PlayerPermissions.GivingItems, out response))
 			{
 				return false;
@@ -48,6 +48,9 @@ namespace CommandExpansion.Commands
 					response = "You must specify the inventory ID to give.";
 					return false;
 				}
+
+				// This is the only this to change :
+				// Add a special case with item IDs
 
 				switch (inventoryID[0])
 				{
@@ -138,23 +141,3 @@ namespace CommandExpansion.Commands
 		}
 	}
 }
-
-// ServerEventCommand eventCommand = new ServerEventCommand();
-//for (int i = 0; i < Enum.GetNames(typeof(ServerEventType)).Length; i++)
-//{
-//	subeventlist += $"[<color=green>{i}</color>] - {(ServerEventType)i}\n";
-//}
-
-//Array command = new Array();
-
-//var args = arguments.Skip(1).ToArray();
-//ArraySegment<string> myArrSegAll = new ArraySegment<string>(args);
-
-//eventCommand.Command = myArrSegAll.Array[0];
-
-//eventCommand.Execute(myArrSegAll, sender, out string commandresponse);
-
-//Log.Info($"{myArrSegAll.Array[0]} {myArrSegAll.Array[1]}");
-//Log.Info($"{eventCommand.Command}");
-//Log.Info($"{eventCommand.Usage}");
-//Log.Info($"{commandresponse}");

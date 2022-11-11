@@ -5,6 +5,10 @@
 	using PluginAPI.Enums;
 	using System;
 
+	/// <summary>
+	/// Returns the list of all server Sub_Events
+	/// - CommandExpansion Command x
+	/// </summary>
 	[CommandHandler(typeof(RemoteAdminCommandHandler))]
 	public class SubEventList : ICommand
 	{

@@ -6,6 +6,10 @@
 	using System;
 	using System.Collections.Generic;
 
+	/// <summary>
+	/// Returns the list of players
+	/// - CommandExpansion Command x
+	/// </summary>
 	[CommandHandler(typeof(RemoteAdminCommandHandler))]
 	public class PlayerList : ICommand
 	{
@@ -29,7 +33,7 @@
 		}
 		public List<IPlayer> getList()
 		{
-			
+
 			return Player.GetPlayers<IPlayer>();
 
 		}

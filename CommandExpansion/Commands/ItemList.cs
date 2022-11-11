@@ -3,6 +3,10 @@
 	using CommandSystem;
 	using System;
 
+	/// <summary>
+	/// Returns the list of available items and their ID
+	/// - CommandExpansion Command
+	/// </summary>
 	[CommandHandler(typeof(RemoteAdminCommandHandler))]
 	public class ItemList : ICommand
 	{

@@ -1,9 +1,20 @@
 ﻿namespace CommandExpansion.Commands
 {
 	using CommandSystem;
+	using CommandSystem.Commands.RemoteAdmin.Decontamination;
 	using CommandSystem.Commands.RemoteAdmin.ServerEvent;
+	using InventorySystem;
+	using PluginAPI.Core;
 	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using Utils;
+	using YamlDotNet.Core;
 
+	/// <summary>
+	/// Execute a server event
+	/// - CommandExpansion Command x
+	/// </summary>
 	[CommandHandler(typeof(RemoteAdminCommandHandler))]
 	public class SubEventSimplifier : ICommand
 	{
@@ -16,14 +27,14 @@
 		public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
 		{
 			string subeventlist = "\n";
-
 			ServerEventCommand eventCommand = new ServerEventCommand();
 
+			ArraySegment<string> subcommand = new ArraySegment<string>(arguments.Skip(1).ToArray());
 
-			//eventCommand.LoadGeneratedCommands();
+			eventCommand.Execute(subcommand, sender, out response);
 
-			//Log.Info($"{}");
-
+			Log.Info($"An event was triggered : {response} (1 {arguments.Skip(1).ToArray()[0]} 2 {subcommand.ToArray()[0]} 3 {subcommand.ToArray()[1]})");
+			
 			response = subeventlist;
 			return true;
 		}

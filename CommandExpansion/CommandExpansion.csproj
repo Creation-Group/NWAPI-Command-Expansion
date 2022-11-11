@@ -5,8 +5,8 @@
 		<PlatformTarget>x64</PlatformTarget>
 		<OutputType>Library</OutputType>
 
-		<AssemblyName>CommandExpension</AssemblyName>
-		<RootNamespace>CommandExpension</RootNamespace>
+		<AssemblyName>CommandExpansion</AssemblyName>
+		<RootNamespace>CommandExpansion</RootNamespace>
 
 		<Configurations>Release</Configurations>
 		<Platforms>AnyCPU</Platforms>

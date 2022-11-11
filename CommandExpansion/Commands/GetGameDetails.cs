@@ -4,14 +4,18 @@
 	using PluginAPI.Core;
 	using System;
 
+	/// <summary>
+	/// Returns details and stats of the current game
+	/// - CommandExpansion Command
+	/// </summary>
 	[CommandHandler(typeof(RemoteAdminCommandHandler))]
 	public class GameStats : ICommand
 	{
-		public string Command { get; } = "gamestats";
+		public string Command { get; } = "gamedetails";
 
-		public string[] Aliases { get; } = new string[] { "gamedetails" };
+		public string[] Aliases { get; } = new string[] { "gamestats", "gd" };
 
-		public string Description { get; } = "Returns details and stats on the current game";
+		public string Description { get; } = "Returns details and stats of the current game";
 
 		public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
 		{
