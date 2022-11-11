@@ -14,7 +14,7 @@
 
 		public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
 		{
-			string itemlist = "";
+			string itemlist = "\n";
 
 			for (int i = 0; i < Enum.GetNames(typeof(ItemType)).Length-1; i++)
 			{

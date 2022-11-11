@@ -1,4 +1,4 @@
-﻿namespace TemplatePlugin.Factory
+﻿namespace CommandExpansion.Factory
 {
 	using PluginAPI.Core;
 	using PluginAPI.Core.Interfaces;

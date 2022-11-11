@@ -19,15 +19,19 @@
 		{
 			string playerlist = "Nothing yet.";
 
-			List<IPlayer> allPlayers = Player.GetPlayers<IPlayer>();
-			/*
-			foreach (Player i in allPlayers)
+			foreach (Player i in getList())
 			{
-				playerlist += $"[<color=green>{allPlayers}</color>]\n";
+				playerlist += $"[<color=green>{i}</color>]\n";
 			}
-			*/
+
 			response = playerlist;
 			return true;
+		}
+		public List<IPlayer> getList()
+		{
+			
+			return Player.GetPlayers<IPlayer>();
+
 		}
 	}
 }
