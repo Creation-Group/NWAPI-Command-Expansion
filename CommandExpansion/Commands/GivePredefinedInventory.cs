@@ -24,7 +24,7 @@
 
 		public string Description { get; } = "Give a predefined inventory to a player";
 
-		public string[] Usage { get; } = new string[2] { "%player%", "%predefinedinventory%" };
+		public string[] Usage { get; } = new string[2] { "%player%", "%PredefinedInventoryID%" };
 
 		public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
 		{
