@@ -10,7 +10,11 @@
 
 		<Configurations>Release</Configurations>
 		<Platforms>AnyCPU</Platforms>
+		<ApplicationIcon>CEicon3.ico</ApplicationIcon>
 	</PropertyGroup>
+	<ItemGroup>
+	  <Content Include="CEicon3.ico" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="YamlDotNet" Version="11.0.1" />
