@@ -263,7 +263,7 @@ __pycache__/
 *.pyc
 *.dll
 
-# NWAPI
-
-NwPluginAPI/
-Analyzers/
+# Others
+.gitattributes
+NWAPI-Command-Expansion.DotSettings
+NWAPI-Command-Expansion.ruleset

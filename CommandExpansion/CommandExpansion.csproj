@@ -21,7 +21,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\NwPluginAPI\NwPluginAPI.csproj" />
+	  <ProjectReference Include="..\..\NwPluginAPI\NwPluginAPI\NwPluginAPI.csproj"/>
 	  <ProjectReference Include="..\Analyzers\NWPluginAPI.Analyzers\NwPluginAPI.Analyzers.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" OutputItemType="Analyzer" />
 	</ItemGroup>
 
