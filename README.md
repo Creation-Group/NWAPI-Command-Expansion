@@ -77,11 +77,13 @@ Current details :
 *Aliases :* plyrlist
 
 *Description :* Returns the list of players.
+  
 -----
 ### subeventlist [SubEventList.cs]
 
 *Aliases :* subevents
 
 *Description :* Returns the list of all server Sub\_Events.
+  
 -----
 ...
