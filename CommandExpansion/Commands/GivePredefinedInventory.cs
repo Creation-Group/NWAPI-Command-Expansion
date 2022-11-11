@@ -49,7 +49,7 @@
 					return false;
 				}
 				// It's the folder that'll contain your own inventory sets
-				string[] lines = System.IO.File.ReadAllLines(@"Commands/Data/Inventories.txt");
+				string[] lines = System.IO.File.ReadAllLines(@"Data/Inventories.txt");
 
 				foreach (string line in lines)
 				{
