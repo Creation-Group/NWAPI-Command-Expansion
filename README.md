@@ -55,9 +55,9 @@ Current details :
 -----
 ### givepredefinedinventory [GivePredefinedInventory.cs]
 
-*Aliases :* gpi
+*Aliases :* gpi, kit
 
-*Description :* Give a predefined inventory to a player.
+*Description :* Give a predefined inventory to a player. It works like a kit.
                 A folder contains a Inventory.txt 
                 Each line is an inventory "**<name>**:**<itemsID>.<...>**
                 Up to 8 items (maxInventory). A '.' is used to separate each items.

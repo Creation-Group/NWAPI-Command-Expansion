@@ -20,7 +20,7 @@
 	{
 		public string Command { get; } = "givepredefinedinventory";
 
-		public string[] Aliases { get; } = new string[] { "gpi" };
+		public string[] Aliases { get; } = new string[] { "gpi", "kit" };
 
 		public string Description { get; } = "Give a predefined inventory to a player";
 
