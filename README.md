@@ -11,7 +11,7 @@ This plugin provide custom commands for SCP-SL servers.
 
 1) Download the repository
 
-2) Then integrate the **[NwPluginAPI](https://github.com/northwood-studios/NwPluginAPI)** folder and the **Analyzers** folder next to the **CommandExpension** folder
+2) Then integrate the **[NwPluginAPI](https://github.com/northwood-studios/NwPluginAPI)** folder
 
 3) Run the NWAPI-Command-Expansion.sln
 
