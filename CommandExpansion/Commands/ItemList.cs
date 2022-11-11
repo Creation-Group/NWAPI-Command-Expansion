@@ -22,7 +22,9 @@
 
 			for (int i = 0; i < Enum.GetNames(typeof(ItemType)).Length-1; i++)
 			{
-				itemlist += $"[<color=green>{i}</color>] - {(ItemType)i}\n";
+				itemlist += $"[<color=green>ID: {i}</color>";
+				itemlist += string.Format((i < 10) ? " " : "");
+				itemlist += $"] - { (ItemType)i}\n";
 			}
 
 			response = itemlist;

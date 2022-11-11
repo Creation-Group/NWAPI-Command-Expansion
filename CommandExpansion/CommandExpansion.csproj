@@ -27,4 +27,10 @@
 		<Reference Include="Mirror" HintPath="$(SL_REFERENCES)\Mirror.dll" />
 	  <Reference Include="UnityEngine.CoreModule" HintPath="$(UNITY_REFERENCES)\UnityEngine.CoreModule.dll" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Commands\Data\Inventories.txt">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
 </Project>

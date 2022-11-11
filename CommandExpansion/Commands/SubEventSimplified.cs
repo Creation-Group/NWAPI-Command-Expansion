@@ -1,15 +1,10 @@
 ﻿namespace CommandExpansion.Commands
 {
 	using CommandSystem;
-	using CommandSystem.Commands.RemoteAdmin.Decontamination;
 	using CommandSystem.Commands.RemoteAdmin.ServerEvent;
-	using InventorySystem;
 	using PluginAPI.Core;
 	using System;
-	using System.Collections.Generic;
 	using System.Linq;
-	using Utils;
-	using YamlDotNet.Core;
 
 	/// <summary>
 	/// Execute a server event
@@ -34,7 +29,7 @@
 			eventCommand.Execute(subcommand, sender, out response);
 
 			Log.Info($"An event was triggered : {response} (1 {arguments.Skip(1).ToArray()[0]} 2 {subcommand.ToArray()[0]} 3 {subcommand.ToArray()[1]})");
-			
+
 			response = subeventlist;
 			return true;
 		}

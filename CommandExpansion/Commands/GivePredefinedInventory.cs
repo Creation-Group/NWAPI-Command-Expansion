@@ -48,23 +48,16 @@
 					response = "You must specify the inventory ID to give.";
 					return false;
 				}
+				// It's the folder that'll contain your own inventory sets
+				string[] lines = System.IO.File.ReadAllLines(@"Commands/Data/Inventories.txt");
 
-				// This is the only this to change :
-				// Add a special case with item IDs
-
-				switch (inventoryID[0])
+				foreach (string line in lines)
 				{
-					case "cards":
-						itemslist = "1.2.3.4.5";
-						break;
-					case "scp":
-						itemslist = "17.18.31.32.42.43.44.46";
-						break;
-					case "grenades":
-						itemslist = "25.25.25.25.25.25.25.25";
-						break;
+					if (inventoryID[0].Equals(line.Split(':')[0]))
+					{
+						itemslist=line.Split(':')[1];
+					}
 				}
-
 				ItemType[] array = ParseItems(itemslist).ToArray();
 				if (array.Length == 0)
 				{
