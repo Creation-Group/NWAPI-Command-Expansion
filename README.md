@@ -60,7 +60,7 @@ Current details :
 *Description :* Give a predefined inventory to a player. It works like a kit.
                 A folder contains a Inventory.txt 
                 Each line is an inventory "**<name>**:**<itemsID>.<...>**
-                Up to 8 items (maxInventory). A '.' is used to separate each items.
+                Up to 8 items (maxInventory). A '.' is used to separate each item.
 
 *Usage :* command %player% %PredefinedInventoryID%
 
