@@ -6,7 +6,7 @@
 
 	public class MainClass
 	{
-		[PluginEntryPoint("CommandExpansion", "1.0.0", "This plugin provide custom commands for SCP-SL servers.", "Majorfox")]
+		[PluginEntryPoint("CommandExpansion", "1.0.0", "This plugin provide Remote Admin custom commands for SCP-SL servers.", "Majorfox")]
 		void LoadPlugin()
 		{
 			Log.Info("Loaded CommandExpansion...");

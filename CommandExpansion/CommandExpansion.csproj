@@ -21,7 +21,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\NwPluginAPI\NwPluginAPI\NwPluginAPI.csproj"/>
+	  <ProjectReference Include="..\..\NwPluginAPI\NwPluginAPI\NwPluginAPI.csproj" />
 	  <ProjectReference Include="..\Analyzers\NWPluginAPI.Analyzers\NwPluginAPI.Analyzers.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" OutputItemType="Analyzer" />
 	</ItemGroup>
 
@@ -30,11 +30,5 @@
 		<Reference Include="CommandSystem.Core" HintPath="$(SL_REFERENCES)\CommandSystem.Core.dll" />
 		<Reference Include="Mirror" HintPath="$(SL_REFERENCES)\Mirror.dll" />
 	  <Reference Include="UnityEngine.CoreModule" HintPath="$(UNITY_REFERENCES)\UnityEngine.CoreModule.dll" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <None Update="Commands\Data\Inventories.txt">
-	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-	  </None>
 	</ItemGroup>
 </Project>
