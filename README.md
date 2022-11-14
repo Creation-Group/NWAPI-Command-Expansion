@@ -1,7 +1,7 @@
 
 # Command Expansion Plugin
 
-This plugin provide custom commands for SCP-SL servers.
+This plugin provide Remote Admin custom commands for SCP-SL servers.
 
 *[This solution is using the official server-side plugin system for SCP: Secret Laboratory game. NW-API](https://github.com/northwood-studios/NwPluginAPI)*
 
@@ -51,18 +51,6 @@ Current details :
 - Server IP and port
 - Server Max Players
 - Number of Players
-
------
-### givepredefinedinventory [GivePredefinedInventory.cs]
-
-*Aliases :* gpi, kit
-
-*Description :* Give a predefined inventory to a player. It works like a kit.
-                A folder contains a Inventory.txt 
-                Each line is an inventory "**<name>**:**<itemsID>.<...>**
-                Up to 8 items (maxInventory). A '.' is used to separate each item.
-
-*Usage :* command %player% %PredefinedInventoryID%
 
 -----
 ### itemlist [ItemList.cs]
