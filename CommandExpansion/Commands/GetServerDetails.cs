@@ -22,7 +22,7 @@
 			response = "\n"
 					 + $"<color=green>Server IP :</color> {Server.ServerIpAddress.ToString()}:{Server.Port.ToString()}\n"
 					 + $"<color=green>Server Max Players :</color> {Server.MaxPlayers} players\n"
-					 + $"<color=green>Number of Players :</color> {Server.Count-1} players";
+					 + $"<color=green>Number of Players :</color> {Player.Count-1} player{(Player.Count-1 < 2 ? "" : "s")}";
 			return true;
 		}
 	}
