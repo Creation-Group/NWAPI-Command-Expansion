@@ -9,7 +9,7 @@
 		[PluginEntryPoint("CommandExpansion", "1.0.0", "This plugin provide Remote Admin custom commands for SCP-SL servers.", "Majorfox")]
 		void LoadPlugin()
 		{
-			Log.Info("Loaded CommandExpansion...");
+			Log.Info("Loading CommandExpansion...");
 			EventManager.RegisterEvents(this);
 			EventManager.RegisterEvents<EventHandlers>(this);
 		}
