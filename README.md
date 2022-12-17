@@ -36,6 +36,10 @@ Current details :
 - Number of SCP kills
 - Number of SCP-049-2 made
 - Number of SCP Alive
+- Number of Chaos Insurgency Alive
+- Number of Class D Alive
+- Number of Mtf And Guards Alive
+- Number of Zombies Alive
 - Number of Escaped Class D
 - Number of Escaped Scientists
 - Number of Killed Players
